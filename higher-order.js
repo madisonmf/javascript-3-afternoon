@@ -21,13 +21,6 @@ const mixedNumbers = [6,3,1,7,5,2,6,8,9,4,2,7,9,3,1,8,4,3];
 */
 
 
-mixedNumbers.filter(e => e%2 === 0)
-
-
-let evenNumbers // = mixedNumbers.filter(/* Provide Your Callback Here */)
-
-
-
 ////////// PROBLEM 2 //////////
 
 // Do not edit the code below.
@@ -129,6 +122,5 @@ const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
   Use a high order method to create to get the sum of bobsTotal.
 */
 
-let bobsTotal //Code Here
 
 

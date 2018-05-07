@@ -24,7 +24,6 @@ var carDetails = {
 //Code Here
 
 
-
 ////////// PROBLEM 2 //////////
 
 /*
@@ -86,7 +85,6 @@ function greeting( obj ) {
 */
 
 //Code Here
-
 
 
 ////////// PROBLEM 6 //////////

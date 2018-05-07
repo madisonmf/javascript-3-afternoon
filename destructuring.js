@@ -21,7 +21,7 @@ var carDetails = {
   Use object destructuring to save the property values from the object carDetails into new variables. 
 */
 
-//Code Here
+let { color, make, model, year } = carDetails;
 
 
 ////////// PROBLEM 2 //////////
@@ -33,7 +33,7 @@ var carDetails = {
 */
 
 function greeting( obj ) {
-  //Code Here
+  let { firstName, lastName, title } = obj;
   
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
@@ -52,9 +52,10 @@ function greeting( obj ) {
   Sum up the values and return the total number.
 */
 
-//Code Here
-
-
+function totalPopulation (obj) {
+  let { utah, california, texas, arizona } = obj;
+  return utah + california + texas + arizona;
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -66,8 +67,12 @@ function greeting( obj ) {
   Push these new variables to an array and return the array. 
 */
 
-//Code Here
-
+function ingredients (obj){
+  let { carb, fat, protein } = obj;
+  let macroArray = [];
+  macroArray.push(carb, fat, protein);
+  return macroArray;
+}
 
 
 ////////// PROBLEM 5 //////////
@@ -84,8 +89,30 @@ function greeting( obj ) {
   Find the smallest number of the three and return that number.
 */
 
-//Code Here
 
+function largeNumbers (desObj) {
+  let { first, second, third } = desObj;
+  for (let prop in desObj){
+    if (first < second && first < third){
+      return first;
+    } else if (second < first && second < third){
+      return second;
+    } else if (third < first && third < second) {
+      return third;
+    }
+  }
+}
+
+// function largeNumbers (desObj) {
+//   let { first, second, third } = desObj;
+//   if (first.value < second.value && first.value < third.value){
+//     return first.value;
+//   } else if (second.value < first.value && second.value < third.value){
+//     return second.value;
+//   } else if (third.value < first.value && third.value < second.value) {
+//     return third.value;
+//   }
+// }
 
 ////////// PROBLEM 6 //////////
 
@@ -95,6 +122,14 @@ function greeting( obj ) {
   Find the longest array and return that array.
 */
 
-//Code Here
-
+function numberGroups (desObj2) {
+  let { a, b, c } = desObj2;
+  if (a.length > b.length && a.length > c.length){
+    return a;
+  } else if (b.length > a.length && b.length > c.length){
+    return b;
+  } else if (c.length > a.length && c.length > b.length){
+    return c;
+  }
+}
 

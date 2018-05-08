@@ -125,11 +125,11 @@ const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
   Use a high order method to create to get the sum of bobsTotal.
 */
 
-
 let bobsTotal = purchases.reduce(function (accumulator, value){
-  if (value["owner"] === "Bob"){
-    return accumulator + value["price"];
-  }
+  if (value["owner"] == 'Bob') {
+    accumulator += value["price"]
+  } 
+  return accumulator
 }, 0)
 
 // Use an if statement to get the total of Bobs only
